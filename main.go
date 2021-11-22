@@ -7,7 +7,9 @@ import (
 	"xorm.io/xorm"
 )
 
-// Student構造体の各フィールドを、構造体タグを使って、XORMのメタ情報を付与してください。
+// 問題1
+// ID、Name、Class、Ageのフィールドを持つ、student構造体を定義してください。
+// 各フィールドには、XORMの構造体タグを使って、メタ情報を付与してください。
 
 func main() {
 	engine, err := xorm.NewEngine("mysql", "root:root@tcp([127.0.0.1]:3306)/sample_db?charset=utf8mb4&parseTime=true")
@@ -22,9 +24,9 @@ func main() {
 
 	// 各関数を実行します
 	// Insert(*engine)
-	// // Get(*engine)
+	// Get(*engine)
 	// Update(*engine)
-	// // Delete(*engine)
+	// Delete(*engine)
 	// WhereAnd(*engine)
 }
 
